@@ -3,4 +3,60 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMainCal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.Toolbar>
+
+
+
+
+                <!--data-->
+
+                <LinearLayout
+                    android:padding="30dp"
+                    android:layout_margin="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Icon-->
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_Click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <!--TextField-->
+                    <EditText
+
+                        android:inputType="text"
+                        android:hint="Click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Click"
+            android:textColor="#e2eded"
+            android:textSize="18dp"
+            android:background="#d0000000"
+            android:text="Summit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>
