@@ -18,7 +18,7 @@ import th.in.androidthai.worktest.MainActivity;
 import th.in.androidthai.worktest.R;
 
 
-public class MainFragment extends Fragment {
+public class MainFragment extends android.support.v4.app.Fragment {
 
 
     @Override
@@ -32,8 +32,13 @@ public class MainFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Intent i = Intent(MainActivity.this ,CalculateFag.class);
-                    startActivity(i);
+//                    Intent i = Intent(MainActivity.this ,CalculateFag.class);
+//                    startActivity(i);
+
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.ContentMain, new CalculateFag()).commit();
+
 
             }
         });
